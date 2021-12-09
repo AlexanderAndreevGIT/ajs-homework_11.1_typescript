@@ -43,6 +43,6 @@ test('card should delete item by id', () => {
   cart.add(book);
   cart.add(musicAlbum);
   cart.add(movie);
-  cart.deleteItem(1008)
+  cart.deleteItem(1008);
   expect(cart.items).toEqual(result);
 });

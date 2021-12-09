@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import Buyable from '../domain/Buyable';
 
 export default class Cart {
@@ -27,9 +28,9 @@ export default class Cart {
     let count = 0;
     this._items.forEach((item) => {
       if (item.id === id) {
-       this._items.splice(count, 1);
+        this._items.splice(count, 1);
       }
       count += 1;
     });
-  } 
+  }
 }
