@@ -23,16 +23,6 @@ export default class Cart {
     return this.sumWithoutDiscount() * (1 - discount / 100);
   }
 
-  // deleteItem(id: number): void {
-  //   let count = 0;
-  //   this._items.forEach((item) => {
-  //     if (item.id === id) {
-  //       this._items.splice(count, 1);
-  //     }
-  //     count += 1;
-  //   });
-  // }
-
   deleteItem(id: number): void {
     const idIndex = this._items.findIndex((item) => item.id === id);
     if (idIndex >= 0) {
